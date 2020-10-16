@@ -6,6 +6,7 @@ arr = list(map(int,input().rstrip().split()))
 i = 0
 flag = True
 
+#while loop
 while (i < len(arr)-1):
     if flag == True:
         if arr[i] < arr[i+1]:
@@ -16,7 +17,7 @@ while (i < len(arr)-1):
         else:
             arr[i], arr[i+1] = arr[i+1], arr[i]
     else:
-        if arr[i] > arr[i+1]:
+        if arr[i] > arr[i+1]: #comarition 
             i += 1
             flag = not flag
             continue
